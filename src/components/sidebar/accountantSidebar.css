@@ -1,0 +1,149 @@
+.accountantSidebar {
+  width: 260px;
+  height: 100vh;
+
+  background: #10192d;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 24px 16px;
+
+  position: sticky;
+  top: 0;
+}
+
+/* Logo */
+
+.sidebarLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 40px;
+}
+
+.logoIcon {
+  width: 48px;
+  height: 48px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #0062ff,
+    #1d4ccd
+  );
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.logoText h3 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.logoText p {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* Menu */
+
+.sidebarMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.menuItem {
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 0 14px;
+
+  border-radius: 12px;
+
+  color: #cbd5e1;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.menuItem.active {
+  background: linear-gradient(
+    135deg,
+    #0062ff,
+    #1d4ccd
+  );
+
+  color: white;
+}
+
+.menuIcon {
+  font-size: 18px;
+
+  display: flex;
+  align-items: center;
+}
+
+/* Footer */
+
+.sidebarFooter {
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.logout {
+  color: #ff7070;
+}
+
+.logout:hover {
+  background: rgba(255, 112, 112, 0.12);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .accountantSidebar {
+    width: 80px;
+  }
+
+  .logoText,
+  .menuItem span:last-child {
+    display: none;
+  }
+
+  .menuItem {
+    justify-content: center;
+  }
+
+  .sidebarLogo {
+    justify-content: center;
+  }
+}

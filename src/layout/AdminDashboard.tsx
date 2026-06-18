@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import AdminSidebar from "../components/sidebar/AdminSidebar";
-import "./adminDashboard.css"
+import "./dashboard.css"
 
 export default function AdminDashboard() {
   return (
