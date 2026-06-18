@@ -1,0 +1,9 @@
+.adminLayout {
+  display: flex;
+}
+
+.adminContent {
+  flex: 1;
+  background: #f8fafc;
+  min-height: 100vh;
+}

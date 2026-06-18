@@ -1,0 +1,410 @@
+.loginPage {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #10192d 0%, #1d4ccd 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.loginPageContant {
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.leftSide {
+  flex: 1;
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topLogo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.topIcon {
+  width: 55px;
+  height: 55px;
+  border-radius: 16px;
+
+  border: 1px solid rgba(0, 98, 255, 0.35);
+  background: rgba(0, 98, 255, 0.12);
+
+  color: #6ea2ff;
+  font-size: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  backdrop-filter: blur(10px);
+}
+
+.topTitle h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.topTitle p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.academics {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(0, 98, 255, 0.1);
+  border: 1px solid rgba(0, 98, 255, 0.25);
+
+  color: #6ea2ff;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  margin-bottom: 25px;
+}
+
+.leftSide h1 {
+  max-width: 650px;
+
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -1px;
+
+  margin-bottom: 20px;
+}
+
+.leftSide > p {
+  max-width: 580px;
+
+  font-size: 15px;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.8);
+
+  margin-bottom: 50px;
+}
+
+/* =========================
+   STATS CARDS
+========================= */
+
+.cardRow {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.totalStudent {
+  min-width: 230px;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(12px);
+
+  transition: all 0.3s ease;
+}
+
+.totalStudent:hover {
+  transform: translateY(-4px);
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-color: rgba(0, 98, 255, 0.3);
+}
+
+.totalStudent .icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #6ea2ff;
+
+  background: rgba(0, 98, 255, 0.12);
+
+  border-radius: 12px;
+
+  margin-bottom: 12px;
+}
+
+.totalStudent .number {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 6px;
+
+  color: #ffffff;
+}
+
+.totalStudent .title {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.rightSide {
+  width: 480px;
+  min-width: 480px;
+
+  padding: 40px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 24px;
+
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightCenter {
+  width: 100%;
+  max-width: 360px;
+}
+
+.rightHeader {
+  margin-bottom: 35px;
+}
+
+.rightHeader h2 {
+  font-size: 32px;
+  font-weight: 700;
+
+  color: #ffffff;
+
+  margin-bottom: 8px;
+}
+
+.rightHeader p {
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* =========================
+   FORM
+========================= */
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroup label {
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+.formGroup input {
+  width: 100%;
+  height: 52px;
+
+  padding: 0 16px;
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  background: rgba(255, 255, 255, 0.08);
+
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+.formGroup input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.formGroup input:focus {
+  border-color: #4d8dff;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  box-shadow: 0 0 0 4px rgba(0, 98, 255, 0.15);
+}
+
+.loginBtn {
+  height: 54px;
+
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(
+    135deg,
+    #0062ff 0%,
+    #1d4ccd 100%
+  );
+
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.loginBtn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(0, 98, 255, 0.35);
+}
+
+.forgotPassword {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -8px;
+}
+
+.forgotPassword a {
+  color: #6ea2ff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.forgotPassword a:hover {
+  color: #ffffff;
+}
+
+.demoCredentials {
+  margin-top: 20px;
+  padding: 14px;
+  border-radius: 12px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.demoCredentials p {
+  color: #6ea2ff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.demoCredentials span {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .loginPageContant {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .rightSide {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .leftSide {
+    padding: 40px;
+  }
+
+  .leftSide h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .loginPage {
+    padding: 20px;
+  }
+
+  .leftSide {
+    padding: 20px;
+  }
+
+  .leftSide h1 {
+    font-size: 34px;
+  }
+
+  .cardRow {
+    flex-direction: column;
+  }
+
+  .totalStudent {
+    width: 100%;
+  }
+
+  .rightSide {
+    padding: 30px 20px;
+  }
+
+  .rightHeader h2 {
+    font-size: 28px;
+  }
+}
